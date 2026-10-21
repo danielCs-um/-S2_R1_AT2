@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria da Vida - Cadastro</title>
+    <link rel="stylesheet" href="farmacia.css">
+</head>
+<body>
+
+    <div class="card-container">
+     
+        <header class="card-header">
+            <div class="header-top">
+                <div class="logo">
+                    <span>farma<strong>vida</strong></span>
+                </div>
+                <span class="badge">Gestão do Consultório</span>
+            </div>
+
+            <div class="header-body">
+                <h1>Bem-vindo à melhor consultoria da região</h1>
+                <p>Preencha os dados ao lado para registar o seu consultório e utilizar a plataforma.</p>
+            </div>
+        </header>
+
+      
+        <main class="form-section">
+            <div class="form-title-bar">
+                <h2>Registo de Clínica</h2>
+                <p class="login-prompt">Já tem uma conta? <a href="login.html">Entre aqui!</a></p>
+            </div>
+
+            <form action="../home_screen/index.html" method="POST">
+               
+                <div class="section-title">
+                    <span>Dados Pessoais</span>
+                </div>
+                
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: Dra. Freitas" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="freitas@exemplo.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="senha">Palavra-passe</label>
+                        <input type="password" id="senha" name="senha" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+               
+                <div class="section-title">
+                    <span>Dados Profissionais</span>
+                </div>
+
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="sigla_conselho">Sigla do Conselho</label>
+                        <select id="sigla_conselho" name="sigla_conselho" required>
+                            <option value="" disabled selected hidden>Selecione o Conselho</option>
+                            <option value="CRM">CRM</option>
+                            <option value="CRO">CRO</option>
+                            <option value="CRP">CRP</option>
+                            <option value="CRF">CRF</option>
+                            <option value="CREFITO">CREFITO</option>
+                            <option value="COREN">COREN</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="uf">UF do Conselho</label>
+                        <select id="uf" name="uf" required>
+                            <option value="" disabled selected hidden>Selecione o estado</option>
+                            <option value="AC">AC</option><option value="AL">AL</option><option value="AP">AP</option>
+                            <option value="AM">AM</option><option value="BA">BA</option><option value="CE">CE</option>
+                            <option value="DF">DF</option><option value="ES">ES</option><option value="GO">GO</option>
+                            <option value="MA">MA</option><option value="MT">MT</option><option value="MS">MS</option>
+                            <option value="MG">MG</option><option value="PA">PA</option><option value="PB">PB</option>
+                            <option value="PR">PR</option><option value="PE">PE</option><option value="PI">PI</option>
+                            <option value="RJ">RJ</option><option value="RN">RN</option><option value="RS">RS</option>
+                            <option value="RO">RO</option><option value="RR">RR</option><option value="SC">SC</option>
+                            <option value="SP">SP</option><option value="SE">SE</option><option value="TO">TO</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="num_conselho">Nº do Conselho</label>
+                        <input type="text" id="num_conselho" name="num_conselho" placeholder="Ex: 123456" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="especialidade">Especialidade</label>
+                        <input type="text" id="especialidade" name="especialidade" placeholder="Ex: Clínica Geral" required>
+                    </div>
+                </div>
+
+                
+                <div class="button-container">
+                    <button type="submit" class="btn-cadastrar">
+                        Concluir Registo
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>

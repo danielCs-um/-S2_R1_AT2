@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria da Vida - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="container login-container">
+        <!-- Painel Esquerdo - Header / Banner -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Consultoria da<strong> vida</strong></h2>
+            </div>
+            <div class="welcome-text">
+                <h1>Bem-vindo(a) de volta!</h1>
+                <p class="subtitle">Acesse o painel da sua clínica para continuar</p>
+            </div>
+        </aside>
+
+        <!-- Área do Formulário -->
+        <main class="form-area">
+            <header class="form-header">
+                <h2>Login</h2>
+                <p>Novo por aqui? <a href="index.html">Cadastre-se</a></p>
+            </header>
+
+            <form action="../home_screen/index.html" method="POST">
+                <div class="form-section">
+                    
+                    <div class="input-group">
+                        <label for="email_login">E-mail</label>
+                        <input type="email" id="email_login" name="email_login" placeholder="informe seu e-mail" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="senha_login">Palavra-passe</label>
+                        <input type="password" id="senha_login" name="senha_login" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="options-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="Lembrar">
+                            <label for="Lembrar">Lembrar-me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="submit" class="btn-submit btn-login">Entrar</button>
+                    </div>
+
+                </div>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>
